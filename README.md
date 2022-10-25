@@ -7,3 +7,13 @@
 3. Run the server using `docker-compose up -d` command (Docker has to be installed in the system).
 4. To monitor server status use `docker ps` command.
 5. To stop the server execute command `docker-compose down`.
+
+### How To Connect:
+
+Setup new connection in your favorite MySQL client with the settings:
+```
+Host: 127.0.0.1
+Port: 3306 (or other if modified)
+Username: root
+Password: root (or other if modified)
+```
