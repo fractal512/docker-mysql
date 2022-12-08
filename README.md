@@ -30,7 +30,7 @@ SQLSTATE[HY001]: Memory allocation error: 1038 Out of sort memory, consider incr
 
 ##### Solution:
 
-Add these lines into `mysql` service section to increase sort buffer size to 1 Gb (1024 * 1024 * 1024 = 1073741824 bytes = 1 Gb, adjust if needed):
+Add these lines into `mysql` service section of the `docker-compose.yml` file to increase the sort buffer size to 1 Gb (1024 * 1024 * 1024 = 1073741824 bytes = 1 Gb, adjust if needed):
 ```
 command:
   - --sort_buffer_size=1073741824
