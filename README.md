@@ -35,3 +35,12 @@ Add these lines into `mysql` service section of the `docker-compose.yml` file to
 command:
   - --sort_buffer_size=1073741824
 ```
+
+#### Incorrect time
+
+##### Solution:
+
+Add this line under `command` section of the `docker-compose.yml` file to change the time zone (for example: set Europe/Helsinki to change the timezone to +02:00 hours):
+```
+- --default-time-zone=Europe/Helsinki
+```
